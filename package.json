@@ -1,0 +1,30 @@
+{
+  "name": "jwsocket",
+  "version": "0.0.1",
+  "description": "Optimizes JSON communication over Websocket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AidanWelch/jwsocket.git"
+  },
+  "keywords": [
+    "JSON",
+    "WS",
+    "websocket",
+    "compression"
+  ],
+  "author": "Aidan Welch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AidanWelch/jwsocket/issues"
+  },
+  "homepage": "https://github.com/AidanWelch/jwsocket#readme",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "utf-8-validate": "^5.0.2",
+    "ws": "^7.2.5"
+  }
+}
