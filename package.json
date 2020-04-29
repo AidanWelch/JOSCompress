@@ -4,7 +4,8 @@
   "description": "Optimizes JSON communication over Websocket",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "doc": "jsdoc2md lib/*.js > docs.md"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,11 @@
   },
   "homepage": "https://github.com/AidanWelch/jwsocket#readme",
   "dependencies": {
-    "bufferutil": "^4.0.1",
-    "utf-8-validate": "^5.0.2",
     "ws": "^7.2.5"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "jsdoc-to-markdown": "^5.0.3",
+    "mocha": "^7.1.2"
   }
 }

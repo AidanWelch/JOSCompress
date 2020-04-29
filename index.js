@@ -1,4 +1,5 @@
-const WebSocket = require('ws');
-class JSONWebSocket extends WebSocket {};
+const JSONWebSocket = require('ws');
+
+JSONWebSocket.Server = require('./lib/server');
 
 module.exports = JSONWebSocket;
