@@ -63,4 +63,6 @@ Create an instance of the JSONWebSocket.Server class.
 | options | <code>Object</code> |  | The JWSocket.Server configuation options. |
 | [options.decodeIncoming] | <code>Boolean</code> \| [<code>Schema</code>](#Schema) | <code>false</code> | Attempts to establish and decode incoming connections.  If schema is given it uses that instead of that is sent. |
 | [options.throwIncoming] | <code>Boolean</code> | <code>false</code> | If decoding incoming message failed pass it to output instead of just ignoring. |
+| [options.autoUnescape] | <code>Boolean</code> | <code>true</code> | This will auto-unescape the incoming messages that have quotation marks after decoding. |
+| [options.autoEscape] | <code>Boolean</code> | <code>true</code> | This will auto-escape the quotation marks in messages you send. |
 
