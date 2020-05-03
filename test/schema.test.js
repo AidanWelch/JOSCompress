@@ -13,11 +13,11 @@ describe('Test of the JSONWebSocket.Schema class', () => {
         },
         E:12312
     };
+    var encoded_string = `"foobar","this will be for escape testing",[1,2,3],{{},[]},12312`;
     describe('encode(object)', () => {
         it('should return the encoded string', () => {
             let result = schema.encode(object)
-            console.log(result);
-            assert.equal(result, `"foobar","this will be for escape testing",[1,2,3],{{},[]},12312`);
+            assert.equal(result, encoded_string);
         })
     })
 });
