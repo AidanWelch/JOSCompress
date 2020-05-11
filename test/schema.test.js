@@ -28,13 +28,13 @@ describe('Test of the JSONWebSocket.Schema class', () => {
         it('should return the encoded string', () => {
             let result = schema.encode(object)
             assert.equal(result, encoded_string);
-        })
+        });
     });
 
     describe('decode(encoded_string', () => {
         it('should return the decoded object', () => {
             let result = schema.decode(encoded_string);
             assert.deepEqual(result, object);
-        }
-    }
+        });
+    });
 });
