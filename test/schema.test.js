@@ -4,7 +4,7 @@ const JWSocket = require('../index');
 describe('Test of the JSONWebSocket.Schema class', () => {
     const schema = new JWSocket.Schema({
         A: "string",
-        B,
+        B: "string",
         C: ["int"],
         D: {
             a: {},
@@ -22,7 +22,7 @@ describe('Test of the JSONWebSocket.Schema class', () => {
         },
         E:12.312
     };
-    var encoded_string = `"foobar","this will be for escape testing",[1,2,3],{{},[]},12312`;
+    var encoded_string = `"foobar","this will be for escape testing",[1,2,3],{{},[]},12.312`;
     
     describe('encode(object)', () => {
         it('should return the encoded string', () => {
@@ -31,7 +31,7 @@ describe('Test of the JSONWebSocket.Schema class', () => {
         });
     });
 
-    describe('decode(encoded_string', () => {
+    describe('decode(encoded_string)', () => {
         it('should return the decoded object', () => {
             let result = schema.decode(encoded_string);
             assert.deepEqual(result, object);
