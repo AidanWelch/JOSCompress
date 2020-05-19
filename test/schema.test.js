@@ -10,7 +10,8 @@ describe('Test of the JSONWebSocket.Schema class', () => {
             a: {},
             b: []
         },
-        E: "float"
+        E: "float",
+        F: "bool"
     });
     var object = {
         A: "foobar",
@@ -20,9 +21,10 @@ describe('Test of the JSONWebSocket.Schema class', () => {
             a: {},
             b: []
         },
-        E:12.312
+        E: 12.312,
+        F: true
     };
-    var encoded_string = `"foobar","this will be for escape testing",[1,2,3],{{},[]},12.312`;
+    var encoded_string = `"foobar","this will be for escape testing",[1,2,3],{{},[]},12.312,true`;
     
     describe('encode(object)', () => {
         it('should return the encoded string', () => {
