@@ -1,8 +1,8 @@
 const assert = require('assert');
-const JSOC = require('../index');
+const JOSC = require('../index');
 
-describe('Test of the JSONWebSocket.Schema class', () => {
-    const schema = new JSOC({
+describe('Test of the Schema class', () => {
+    const schema = new JOSC({
         A: "string",
         B: "string",
         C: ["int"],
