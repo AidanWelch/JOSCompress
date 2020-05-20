@@ -1,14 +1,14 @@
 const assert = require('assert');
-const JWSocket = require('../index');
+const JSOC = require('../index');
 
 describe('Test of the JSONWebSocket.Schema class', () => {
-    const schema = new JWSocket.Schema({
+    const schema = new JSOC({
         A: "string",
         B: "string",
         C: ["int"],
         D: {
             a: {},
-            b: []
+            b: [{c: "float"}]
         },
         E: "float",
         F: "bool"
@@ -19,12 +19,12 @@ describe('Test of the JSONWebSocket.Schema class', () => {
         C: [1,2,3],
         D: {
             a: {},
-            b: []
+            b: [{c: 4.2}]
         },
         E: 12.312,
         F: true
     };
-    var encoded_string = `"foobar","this will be for escape testing",[1,2,3],{{},[]},12.312,true`;
+    var encoded_string = `"foobar","this will be for escape testing",[1,2,3],{{},[{4.2}]},12.312,true`;
     
     describe('encode(object)', () => {
         it('should return the encoded string', () => {
