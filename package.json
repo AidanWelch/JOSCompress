@@ -1,6 +1,6 @@
 {
   "name": "joscompress",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "Optimizes JSON sizes through a schema format.",
   "main": "index.js",
   "scripts": {
