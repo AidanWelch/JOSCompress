@@ -4,9 +4,9 @@ Optimizes JSON sizes through a schema format.
 ## Tutorial
 ### Schema
 The first step to using JOSC is to initialize the schema.  The schema must be either an object or an array, the first entry of an array and each property should indicate the type of data contained.  This is not checked, but could cause unforseen errors if you do not.  As of the types are denonted as so:
-* **Arrays** are indicate with brackets containing the data type. | **Example**: ['int']
-* **Objects** are indicated with braces and contain the keys and data types. | **Example**: {foobar: 'string'}
-* **Strings, ints, bools, and floats** can be indicated with their names, as a lowercase string. | 'string', 'int', 'bool', 'float'
+* **Arrays** are indicate with brackets containing the data type. | **Example**: ```['int']```
+* **Objects** are indicated with braces and contain the keys and data types. | **Example**: ```{foobar: 'string'}```
+* **Strings, ints, bools, and floats** can be indicated with their names, as a lowercase string. | ```'string', 'int', 'bool', 'float'```
 * **Other types** for other types it is recommended you use the string type then pass them through ```JSON.parse()```
 
 You can now initialize the main class of the library with that object/array.  This returns a new ```Schema``` object.
