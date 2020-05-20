@@ -14,9 +14,8 @@
   "keywords": [
     "JSON",
     "schema",
-    "websocket",
-    "compression",
-    "mongodb"
+    "JOSC",
+    "compression"
   ],
   "author": "Aidan Welch",
   "license": "MIT",
