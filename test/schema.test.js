@@ -28,7 +28,7 @@ describe('Test of the Schema class', () => {
     
     describe('encode(object)', () => {
         it('should return the encoded string', () => {
-            let result = schema.encode(object)
+            let result = schema.encode(object);
             assert.equal(result, encoded_string);
         });
     });
