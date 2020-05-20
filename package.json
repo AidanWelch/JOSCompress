@@ -13,9 +13,10 @@
   },
   "keywords": [
     "JSON",
-    "WS",
+    "schema",
     "websocket",
-    "compression"
+    "compression",
+    "mongodb"
   ],
   "author": "Aidan Welch",
   "license": "MIT",
@@ -23,9 +24,7 @@
     "url": "https://github.com/AidanWelch/jwsocket/issues"
   },
   "homepage": "https://github.com/AidanWelch/jwsocket#readme",
-  "dependencies": {
-    "ws": "^7.2.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^6.8.0",
     "jsdoc-to-markdown": "^5.0.3",

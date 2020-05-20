@@ -1,2 +1,2 @@
-# jwsocket
-Optimizes JSON communications over websocket
+# JOSCompress
+Optimizes JSON sizes through a schema format.
