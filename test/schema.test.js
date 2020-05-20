@@ -24,7 +24,7 @@ describe('Test of the Schema class', () => {
         E: 12.312,
         F: true
     };
-    var encoded_string = `"foobar","this will be for escape testing",[1,2,3],{{},[{4.2}]},12.312,true`;
+    var encoded_string = `"foobar","this will be for escape testing",[1,2,3],{{},[{4.2}]},12.312,1`;
     
     describe('encode(object)', () => {
         it('should return the encoded string', () => {
