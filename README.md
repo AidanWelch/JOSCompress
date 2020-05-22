@@ -7,7 +7,7 @@ The first step to using JOSC is to initialize the schema.  The schema must be ei
 * **Arrays** are indicate with brackets containing the data type. | **Example**: ```['int']```
 * **Objects** are indicated with braces and contain the keys and data types. | **Example**: ```{foobar: 'string'}```
 * **Strings, ints, bools, and floats** can be indicated with their names, as a lowercase string. | ```'string', 'int', 'bool', 'float'```
-* **Other types** for other types it is recommended you ```JSON.stringify()``` them then pass as ```'string'```, after decoding put them through ```JSON.parse()```.
+* **Other types** it is recommended you ```JSON.stringify()``` them then pass as ```'string'```, after decoding put them through ```JSON.parse()```.
 
 You can now initialize the main class of the library with that object/array.  This returns a new ```Schema``` object.
 
