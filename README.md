@@ -1,6 +1,8 @@
 # JS Object Schema Compression
 Optimizes JSON sizes through a schema format.
 
+[The Front-end build can be accessed here](https://github.com/AidanWelch/JOSCompress/tree/master/frontend-build)
+
 ## Tutorial
 ### Schema
 The first step to using JOSC is to initialize the schema.  The schema must be either an object or an array, the first entry of an array and each property should indicate the type of data contained.  This is not checked, but could cause unforseen errors if you do not.  As of the types are denonted as so:
