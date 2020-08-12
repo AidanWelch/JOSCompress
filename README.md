@@ -1,5 +1,5 @@
 # JS Object Schema Compression
-Optimizes JSON sizes through a schema format.
+Optimizes JSON sizes through a schema format.  [Install using NPM](https://www.npmjs.com/package/joscompress)
 
 [The Front-end build can be accessed here](https://github.com/AidanWelch/JOSCompress/tree/master/frontend-build)
 
