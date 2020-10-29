@@ -6,7 +6,7 @@ Optimizes JSON sizes through a schema format.  [Install using NPM](https://www.n
 ## Tutorial
 ### Schema
 The first step to using JOSC is to initialize the schema.  The schema must be either an object or an array, the first entry of an array and each property should indicate the type of data contained.  This is not checked, but could cause unforseen errors if you do not.  As of the types are denonted as so:
-* **Arrays** are indicate with brackets containing the data type. | **Example**: ```['int']```
+* **Arrays** are indicated with brackets containing the data type. | **Example**: ```['int']```
 * **Objects** are indicated with braces and contain the keys and data types. | **Example**: ```{foobar: 'string'}```
 * **Strings, ints, bools, and floats** can be indicated with their names, as a lowercase string. | ```'string', 'int', 'bool', 'float'```
 * **Other types** it is recommended you ```JSON.stringify()``` them then pass as ```'string'```, after decoding put them through ```JSON.parse()```.
